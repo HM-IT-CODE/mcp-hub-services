@@ -1,0 +1,22 @@
+[package]
+name        = "sentinel-hub"
+version     = "0.1.0"
+edition     = "2021"
+description = "Multi-node MCP orchestrator — routes AI tool calls across multiple SQL Sentinel instances"
+
+[[bin]]
+name = "sentinel-hub"
+path = "src/main.rs"
+
+[dependencies]
+tokio        = { version = "1", features = ["full"] }
+axum         = "0.7"
+serde        = { version = "1", features = ["derive"] }
+serde_json   = "1"
+anyhow       = "1"
+tracing      = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+rusqlite     = { version = "0.31", features = ["bundled"] }
+reqwest      = { version = "0.12", features = ["json"] }
+uuid         = { version = "1", features = ["v4"] }
+futures      = "0.3"

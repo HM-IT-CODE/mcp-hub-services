@@ -1,0 +1,14 @@
+# Rust
+/target/
+**/*.rs.bk
+
+# Local databases / runtime
+*.db
+hub-out.log
+hub-err.log
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
